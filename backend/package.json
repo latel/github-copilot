@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
+    "start": "node ./dist/bootstrap.js",
+    "build": "midway-bin build -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@midwayjs/core": "^3.20.11",
+    "@midwayjs/decorator": "^3.20.11",
+    "@midwayjs/koa": "^3.20.16",
+    "@midwayjs/typeorm": "^3.20.11",
+    "mysql2": "^3.15.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@midwayjs/cli": "^2.1.1",
+    "@types/koa": "^3.0.1",
+    "@types/node": "^24.10.1",
+    "cross-env": "^10.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
