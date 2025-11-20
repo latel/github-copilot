@@ -44,7 +44,7 @@ const componentMap: Record<string, any> = {
 };
 
 const componentStyle = computed(() => ({
-  position: 'absolute',
+  position: 'absolute' as const,
   left: `${props.component.position.x}px`,
   top: `${props.component.position.y}px`,
   width: `${props.component.position.width}px`,
